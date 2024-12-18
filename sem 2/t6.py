@@ -1,6 +1,7 @@
 A = list(map(int, input().split()))
-x=[]
-for i in A:
-    if A.count(i) == 1:
-        x.append(i)
-print(x)
+
+for x in A:
+    if A.count(x) > 1:
+        while x in A:
+            A.remove(x)
+print(A)
