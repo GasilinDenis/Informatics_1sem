@@ -6,7 +6,7 @@ for i in range(0,n):
     l=list(map(int, input().split()))
     mat[i]=l
 M=np.copy(mat)
-Df=(np.linalg.det(np.delete(mat,m-1,axis=1))) #НЕ должно быть 0, а то ломается
+Df=(np.linalg.det(np.delete(mat,m-1,axis=1))) #НЕ должно быть 0, а то ломается nan
 def dd(mat,g):
     mat=np.copy(M) #вернуть оригинальную матрицу
     for i in range(0,n):
